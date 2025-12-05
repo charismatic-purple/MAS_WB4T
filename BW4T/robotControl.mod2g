@@ -7,8 +7,10 @@ module robotControl {
 		then goTo(PlaceID).
 
 	% terminate the agent if there are no more rooms to visit.
-	if not( not_yet_visited(_) ) then exit-module.
+	% Previous condition if not( not_yet_visited(_) ) then exit-module.
 	
-	% if true then print("CONTROL CYCLE RUN").
+	% E2
+	
+	if sequence(ListOfColours), length(ListOfColours, Length), sequenceIndex(Index), Index =:= Length - 1 then exit-module.
 	
 }

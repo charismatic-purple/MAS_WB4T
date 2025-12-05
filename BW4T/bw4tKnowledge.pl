@@ -4,6 +4,8 @@
 	state/1,	% percept predicate to keep track of whether a robot is moving.
 	visited/1,	% predicate to keep track of the rooms that have been visited.
 	zone/5.		% percept predicate with information about all zones in BW4T.
+	
+	% E1 (a)
 	sequence/1. % percept to set teh goal for the robot.
 	sequenceIndex/1. % percept that indicates  currently needed color in the sequence.
 	color/2. % percept with the information about the color of blocks.
