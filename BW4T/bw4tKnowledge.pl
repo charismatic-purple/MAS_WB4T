@@ -4,6 +4,11 @@
 	state/1,	% percept predicate to keep track of whether a robot is moving.
 	visited/1,	% predicate to keep track of the rooms that have been visited.
 	zone/5.		% percept predicate with information about all zones in BW4T.
+	sequence/1. % percept to set teh goal for the robot.
+	sequenceIndex/1. % percept that indicates  currently needed color in the sequence.
+	color/2. % percept with the information about the color of blocks.
+	atBlock/1. % percept with blocks within pickup range.
+	holding/1. % percept with info of a block being held.
 
 % A room is a place with exactly one neighbour; in other words, there is only one way to
 % get to and from that place.
