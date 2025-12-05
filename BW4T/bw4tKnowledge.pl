@@ -9,6 +9,7 @@
 	color/2. % percept with the information about the color of blocks.
 	atBlock/1. % percept with blocks within pickup range.
 	holding/1. % percept with info of a block being held.
+	block/3. % stored block info
 
 % A room is a place with exactly one neighbour; in other words, there is only one way to
 % get to and from that place.

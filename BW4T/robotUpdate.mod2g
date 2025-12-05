@@ -3,4 +3,7 @@ use bw4tKnowledge.
 module robotUpdate {
 	% update in which rooms the agent has been.
 	if in(PlaceID), room(PlaceID) then insert( visited(PlaceID) ).
+	
+	forall in(PlaceID),color(BlockID, ColorID)
+	do insert ( block(BlockID, ColorID, PlaceID) ).
 }

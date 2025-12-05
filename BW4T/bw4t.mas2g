@@ -11,8 +11,17 @@ define robot {
 	replace in/1. % indicates that the robot is in a room.
 	update state/1. % keeps track of state of movement of the robot.
 	add zone/5. % provides initial information about all the places in BW4T.
+	
+	add sequence/1. % this is our goal, which is the color order in which blocks have to be dropped at the drop zone.
+	update sequenceIndex/1. % index of the currently needed color in the sequence.
+	
+	replace color/2. % we use color(BlockID, ColorID) to see the information about the color of blocks.
+	replace atBlock/1. % these are the blocks within pickup range (This player is within reach of block <BlockID>).
+	replace holding/1. % block currently held.
 }
 
 launchpolicy {
 	when * launch robot.
 }
+
+% E1 (d) — Test: 
